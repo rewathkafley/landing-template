@@ -9,13 +9,13 @@ import {HttpClient} from '@angular/common/http';
 export class NewsListComponent implements OnInit {
   @Input() data: any;
 
-  newsList: { id: number, title: string }[] = [];
+  newsList: { id: number, title: string, description: string }[] = [];
 
   constructor(private http: HttpClient) {
   }
 
   ngOnInit() {
-    this.http.get(this.data.data_source).subscribe((news: { id: number, title: string }[]) => {
+    this.http.get(this.data.data_source).subscribe((news: { id: number, title: string, description: string }[]) => {
       this.newsList = news;
     });
   }

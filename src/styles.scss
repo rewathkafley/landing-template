@@ -78,6 +78,7 @@
 
 .about-us {
   margin-top: 20px;
+  text-align: center;
 
 }
 
@@ -90,12 +91,13 @@
   margin-left: 504px;
 }
 .news .news-list {
-  margin: 0 auto;
+  margin: 10px 10px;
   width: 400px;
   height: 100%;
   -webkit-box-shadow: -1px 4px 10px -1px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 4px 10px -1px rgba(0,0,0,0.75);
   box-shadow: -1px 4px 10px -1px rgba(0,0,0,0.75);
+  display: inline-block;
 }
 
 .news-image {

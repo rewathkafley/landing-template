@@ -1,9 +1,9 @@
-<section class="news m-20 text-center" data-pb-c="news" data-pb="{data._editable}">
+<section class="news m-20 text-center" data-pb-c="news" [attr.data-pb]="data._editable">
   <h2>News</h2>
   <div class="news-list" *ngFor="let news of newsList">
     <img src="assets/images/banner.jpg" alt="news" class="news-image">
     <p>12th august 2019</p>
-    <p>Hot news</p>
     <p>{{news.title}}</p>
+    <p>{{news.description}}</p>
   </div>
 </section>

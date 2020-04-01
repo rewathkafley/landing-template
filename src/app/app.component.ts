@@ -9,14 +9,13 @@ import {ScullyRoutesService} from '@scullyio/ng-lib-v8';
 })
 export class AppComponent implements OnInit {
   title = 'landing';
-  page: { content: { body: any[] } };
+  page: { content: any };
 
   constructor(private service: AppService, private scully: ScullyRoutesService) {
   }
 
   ngOnInit(): void {
     this.scully.available$.subscribe(links => {
-      debugger;
     });
     this.service.getPage().subscribe((data: any) => {
       this.page = data;
@@ -25,9 +24,9 @@ export class AppComponent implements OnInit {
 
   createContent() {
     return {
-      header: this.page.content.body[0],
-      about_us: this.page.content.body[1],
-      news_list: this.page.content.body[2]
+      header: this.page.content.header,
+      about_us: this.page.content.about_us,
+      news_list: this.page.content.trending_news
     };
   }
 }

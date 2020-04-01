@@ -19,7 +19,7 @@ export class AppService {
   configFetched = new BehaviorSubject<boolean>(false);
 
   constructor(private http: HttpClient) {
-    this.http.get('/config.json').subscribe((config: Config) => {
+    this.http.get('config.json').subscribe((config: Config) => {
       this.config = config;
       this.config.page_url = `${config.api_url}/${config.page_id}`;
       this.configFetched.next(true);
