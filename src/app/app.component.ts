@@ -26,7 +26,9 @@ export class AppComponent implements OnInit {
     return {
       header: this.page.content.header,
       about_us: this.page.content.about_us,
-      news_list: this.page.content.trending_news
+      news_list: this.page.content.trending_news,
+      faqs: this.page.content.faqs,
+      footer: this.page.content.footer
     };
   }
 }

@@ -1,0 +1,10 @@
+<section data-pb-c="faqs" [attr.data-pb]="data._editable">
+  <h2 style="text-align: center"> Frequently asked questions</h2>
+  <p style="text-align:center">Join 4000K people...</p>
+  <div >
+    <div *ngFor="let qa of faqs" style="text-align: center;margin:20px" data-pb-c="QA" [attr.data-pb]="qa._editable">
+      <h4>{{qa.question}}</h4>
+      <p>{{qa.answer}}</p>
+    </div>
+  </div>
+</section>

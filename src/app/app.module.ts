@@ -9,6 +9,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { NewsListComponent } from './news-list/news-list.component';
 import { ScullyLibModule } from '@scullyio/ng-lib-v8';
 import { AppRoutingModule } from './app-routing.module';
+import { FaqsComponent } from './faqs/faqs.component';
+import { FooterComponent } from './footer/footer.component';
 
 export function initialize() {
 
@@ -21,7 +23,9 @@ export function initialize() {
     PageComponent,
     HeaderComponent,
     AboutUsComponent,
-    NewsListComponent
+    NewsListComponent,
+    FaqsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

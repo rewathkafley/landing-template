@@ -7,7 +7,12 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class PageComponent implements OnInit {
 
-  @Input() content: { header: any, about_us: any, news_list: any, component: string, _editable: string };
+  @Input() content: {
+    header: any, about_us: any, news_list: any,
+    component: string, _editable: string,
+    faqs: any[],
+    footer: any
+  };
 
   constructor() {
   }
